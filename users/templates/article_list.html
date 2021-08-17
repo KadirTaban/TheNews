@@ -10,7 +10,10 @@
 				{{ article.date }}</span>
 			</div>
 			<div class="card-body">
-				<p>{{ article.body }}</p>
+				<p>{{ article.body }}
+                    <img src="{{ article.cover}}">
+
+                </p>
 				<!-- Değişiklik buradan başlıyor -->
 				<a href="{% url 'article_edit' article.pk %}">Düzenle</a> |
 				<a href="{% url 'article_delete' article.pk %}">Sil</a>
